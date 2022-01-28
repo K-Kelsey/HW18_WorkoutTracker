@@ -1,8 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const logger = require("morgan");
-const html = require(`./routes/htmlRoutes`);
-const api = require(`./routes/apiRoutes`);
+
+var compression = require("compression")
+
+// const html = require(`./routes/htmlRoutes`);
+// const api = require(`./routes/apiRoutes`);
 
 const PORT = process.env.PORT || 3000;
 const app = express();
@@ -11,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
+app.use(compression());
 app.use(logger("dev"));
 
 
@@ -22,10 +26,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
 });
 
 // set up routes
-app.use(html, api);
+app.use(require("./routes/api.js"));
+app.use(require("./routes/html.js"));
 
-// require("./routes/api.js")(app);
 // require("./routes/html.js")(app);
+// app.use(html, api);
 
 app.listen(PORT, () => {
     console.log(`App running on localhost:${PORT}`);
