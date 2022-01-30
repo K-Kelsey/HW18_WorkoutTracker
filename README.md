@@ -3,7 +3,7 @@
 ---
 ![MIT license](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## INSTRUCTIONS
-This project is designed to allow the users to search for any book titles or authors and will be returned with a list of books via the GoogleBooks API.  Users are also allowed to create an account that will allow them the added feature of saving books to their account!
+This project was assigned to allow the developer to be exposed to working with MongoDB and designing a mongo schema for the back end of the application. 
 ## Table of Contents
 * [Installation:](#installation)
 * [Usage:](#usage)
@@ -16,22 +16,21 @@ This project is designed to allow the users to search for any book titles or aut
 To install this app so that it functions properly, clone my github repository, open the integrated terminal tied to the current project folder, then run 'npm install' in your terminal. This should download all necessary packages.
 
 ## Usage
-You can use this project to allow users to create an account that will allow them to save books they intend to read or look into.  You can also search books by author to find more books by your favorite author!
-
+You can use this project to allow users to track their workout progress. When visiting the website, you will be greeted with an interface that allows you to create a new workout. You can name you workout as well as fill out the fine details in relation to the workout. The project also offers a dashboard where the user can track their progression.
 ## Example
 Here you can see some examples of the deployed website: (https://polar-springs-95091.herokuapp.com/?id=61f5fc72979955001698f63c)
 
-![login form](images/login.png)
-![sign up form](images/signup.png)
-![search books](images/search.png)
-![saved books](images/saved.png)
+![choose type of workout](images/choose.png)
+![enter details of the workout](images/workout.png)
+![an accumulation of the latest workouts](images/latest.png)
+![view users progression](images/stats.png)
 
  # License
             This project is licensed under the MIT license (https://opensource.org/licenses/MIT)
             
 
 ## Contributing
-Users can contribute to this project by examining the code to implement cool features such as a profile interface that allows you to pin your favorite books!  Contributers can also refactor the code into React.js syntax to polish up the UI and make the site smoother in transition.
+Users can contribute to this project by examining the code to implement cool features such as a profile interface that allows you to save your workouts or perhaps upload videos that demonstrate techniques to execute certain workouts. That being said, creating a page of the most popular workouts, dissecting which muscle groups people want to work on and maybe even a page for diet plans! There are many cool features that can be added to this application
 
 ## Tests
 This project can be tested by installing the necessary packages then run the program on your local environment which can be done via your intergrated terminal or tools alike such as gitbash or windows powershell.
